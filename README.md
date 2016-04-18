@@ -116,3 +116,28 @@ that tab stop early. To prevent that, escape the brace with two backslashes, lik
 ### Multiple snippets for the same scope
 
 Snippets for the same scope must be placed within the same key. See [this section of the Atom Flight Manual](https://atom.io/docs/latest/using-atom-basic-customization#configuring-with-cson) for more information.
+
+## Special variables in snippets package
+
+Add variables of the form ${Xname} where the first character X is one of /, :, or -. The suffix name must follow specific values or syntax. Examples ...
+
+### files and paths
+
+**${/filename}** => /root/proj/lib/main.coffee
+**${/dirname}** => /root/proj/lib
+**${/basename}** => main.coffee
+**${/extname}** => .coffee
+**${/sep}** => /
+**${/delimiter}** => :
+**${/projectpath}** => /root/proj
+**${/project}** => proj
+**${/filenamerel}** => lib/main.coffee
+**${/dirnamerel}** => lib
+**${/line}** => 27 (line number of cursor position)
+
+### date & times
+
+**${-any-moment-format}** current time in any format provided by the moment npm package
+**${-MMMM Do YYYY, h:mm:ss a}** => November 22nd 2014, 2:24:26 am
+**${-dddd}** => Saturday
+**${-MMM Do YY}** => Nov 22nd 14
