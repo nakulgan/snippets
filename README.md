@@ -123,21 +123,21 @@ Add variables of the form ${Xname} where the first character X is one of /, :, o
 
 ### files and paths
 
-**${/filename}** => /root/proj/lib/main.coffee
-**${/dirname}** => /root/proj/lib
-**${/basename}** => main.coffee
-**${/extname}** => .coffee
-**${/sep}** => /
-**${/delimiter}** => :
-**${/projectpath}** => /root/proj
-**${/project}** => proj
-**${/filenamerel}** => lib/main.coffee
-**${/dirnamerel}** => lib
-**${/line}** => 27 (line number of cursor position)
+**${/filename}** => /root/proj/lib/main.coffee     
+**${/dirname}** => /root/proj/lib     
+**${/basename}** => main.coffee     
+**${/extname}** => .coffee     
+**${/sep}** => /     
+**${/delimiter}** => :     
+**${/projectpath}** => /root/proj     
+**${/project}** => proj     
+**${/filenamerel}** => lib/main.coffee     
+**${/dirnamerel}** => lib     
+**${/line}** => 27 (line number of cursor position)     
 
 ### date & times
 
-**${-any-moment-format}** current time in any format provided by the moment npm package
-**${-MMMM Do YYYY, h:mm:ss a}** => November 22nd 2014, 2:24:26 am
-**${-dddd}** => Saturday
-**${-MMM Do YY}** => Nov 22nd 14
+**${-any-moment-format}** current time in any format provided by the moment npm package    
+**${-MMMM Do YYYY, h:mm:ss a}** => November 22nd 2014, 2:24:26 am    
+**${-dddd}** => Saturday    
+**${-MMM Do YY}** => Nov 22nd 14    
